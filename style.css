@@ -5,6 +5,7 @@ header{
 h1{
     font-weight: 500;
     font-size: 24px;
+    margin : 0 0 16px 0;
 }
 
 nav , a{
@@ -12,22 +13,24 @@ nav , a{
     color:black;
 }
 
-section {
-    
-}
+
 
 p{
     color: gray;
+    margin: 0 0 16px 0 ; 
 }
 
-.btn-info{
+.btn{
     background-color: yellow;
     background-image: url();
     color : azure;
+    padding: 8px 24px;
 }
 
-.btn-about{
+.btn-alt{
     background-color: white;
-    color : black
- 
+    color : black;
+    padding: 8px 24px;
+    margin-right:50px;
+    border: 2px solid;
 }
