@@ -1,0 +1,33 @@
+header{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+nav , a{
+    text-decoration: none;
+    color:black;
+}
+
+section {
+    
+}
+
+p{
+    color: gray;
+}
+
+.btn-info{
+    background-color: yellow;
+    background-image: url();
+    color : azure;
+}
+
+.btn-about{
+    background-color: white;
+    color : black
+ 
+}
