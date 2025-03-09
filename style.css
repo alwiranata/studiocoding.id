@@ -6,6 +6,7 @@ h1{
     font-weight: 500;
     font-size: 24px;
     margin : 0 0 16px 0;
+    display: inline;
 }
 
 nav , a{
@@ -21,7 +22,7 @@ p{
 }
 
 .btn{
-    background-color: yellow;
+    background-color: orange;
     background-image: url();
     color : azure;
     padding: 8px 24px;
@@ -31,6 +32,21 @@ p{
     background-color: white;
     color : black;
     padding: 8px 24px;
-    margin-right:50px;
+    margin-right: 50px;
     border: 2px solid;
+}
+
+.landing p{
+    margin-bottom: 24px;
+}
+
+nav > a{
+    padding: 2;
+    margin-bottom: 24px;
+    color: orange;
+    
+}
+
+nav{
+    justify-content: flex-end;
 }
