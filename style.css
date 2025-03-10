@@ -1,10 +1,24 @@
+
 header{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
+#header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 16px 128px;
+}
+
+header h1{
+    margin: 0px;
+}
+
+
 h1{
-    font-weight: 500;
-    font-size: 24px;
+   
+    font-size: 40px;
     margin : 0 0 16px 0;
     display: inline;
 }
@@ -14,16 +28,32 @@ nav , a{
     color:black;
 }
 
+nav > a{
+    margin: 5px;
+    color: orange;
+    font-size: 16px;
+    
+}
 
+#landing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 60px;
+}
+
+section{
+    padding: 64px 128px;
+}
 
 p{
     color: gray;
-    margin: 0 0 16px 0 ; 
+    margin: 0 0 20px 0 ; 
+    font-size: 20px;
 }
 
 .btn{
     background-color: orange;
-    background-image: url();
     color : azure;
     padding: 8px 24px;
 }
@@ -33,19 +63,14 @@ p{
     color : black;
     padding: 8px 24px;
     margin-right: 50px;
-    border: 2px solid;
+    border: 1px solid;
 }
 
 .landing p{
     margin-bottom: 24px;
 }
 
-nav > a{
-    padding: 2;
-    margin-bottom: 24px;
-    color: orange;
-    
-}
+
 
 nav{
     justify-content: flex-end;
