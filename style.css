@@ -145,11 +145,22 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 72px;
-
+	column-gap: 128px;
 }
 
 iframe{
 	width: 100%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	border: 3px solid orange;
+	padding: 64px 32px;
+}
+
+form button{
+	border: none;
 }
 
 .form-group{
@@ -157,7 +168,27 @@ iframe{
 	grid-template-columns: repeat(2 ,1fr);
 	column-gap: 32px;
 	margin-top: 32px;
+	grid-template-areas: "name subject"
+						 "email phone"
+						 "message message";
 }
+
+#input-name {
+	grid-area: name;
+}
+#input-subject {
+	grid-area: subject;
+}
+#input-email {
+	grid-area: email;
+}
+#input-phone {
+	grid-area: phone;
+}
+#input-message {
+	grid-area: message;
+}
+
 
 .input-group{
 	display: flex;
@@ -177,4 +208,24 @@ iframe{
 	outline: none;
 	border-bottom: 1px solid black;
 	font-size: 15px;
+}
+
+footer {
+	padding: 16px 128px;
+	background-color: orange;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer p{
+	color: white;
+	width: 50%;
+	margin-top: 10px;
+}
+
+footer .icon{
+	display: flex;
+	gap: 32px;
 }
