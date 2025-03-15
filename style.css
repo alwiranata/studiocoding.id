@@ -1,12 +1,19 @@
 header {
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+html , body {
+	margin: 0;
+	padding: 0;
+}
 
 #header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 16px 128px;
+	position: sticky;
+	top: 0px;
+	background-color: white;
 }
 #header > div {
 	width: 50%;
@@ -17,7 +24,7 @@ header h1 {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 35px;
 	margin: 0 0 16px 0;
 	display: inline;
 }
@@ -111,24 +118,63 @@ nav {
 
 .service-detail {
 	display: grid;
-    grid-template-columns: repeat(3 ,1fr);
+	grid-template-columns: repeat(3, 1fr);
 	column-gap: 128px;
 	margin-top: 72px;
 }
 
-.service-detail-item, img{
+.service-detail-item img {
 	width: 100%;
 }
 
-.service-detail-item ,h2{
+.service-detail-item h2 {
 	padding: 0 16px;
 }
 
-.service-detail-item ,p{
+.service-detail-item p {
 	font-size: 16px;
 	padding: 0 16px;
 }
 
-.service-detail-item{
+.service-detail-item {
 	box-shadow: 2px 4px 4px gray;
+}
+
+
+.contact-detail {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 72px;
+
+}
+
+iframe{
+	width: 100%;
+}
+
+.form-group{
+	display: grid;
+	grid-template-columns: repeat(2 ,1fr);
+	column-gap: 32px;
+	margin-top: 32px;
+}
+
+.input-group{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 32px;
+	
+}
+
+.input-group label{
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 32px;
+}
+
+.input-group input{
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	font-size: 15px;
 }
