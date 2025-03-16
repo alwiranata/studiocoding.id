@@ -14,6 +14,7 @@ html , body {
 	position: sticky;
 	top: 0px;
 	background-color: white;
+	z-index: +1;
 }
 #header > div {
 	width: 50%;
@@ -120,6 +121,28 @@ nav {
 	align-items: center;
 }
 
+.service-header  p {
+	margin-top: 20px;
+}
+
+.service-header h1 {
+	position: relative;
+}
+
+
+.service-header h1::before{
+	content:  "";
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	background :url("./images/accent1.svg");
+	left: -20px;
+	top: -10px;
+	z-index: -1;
+}
+
+
+
 .service-detail {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -144,7 +167,24 @@ nav {
 	box-shadow: 2px 4px 4px gray;
 }
 
+#contact p {
+	margin-top: 20px;
+}
 
+#contact h1 {
+	position: relative;
+}
+
+#contact h1::before {
+	content: " ";
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	background: url('./images/accent2.svg');
+	top: --20px;
+	left: -20px;
+	z-index: -1;
+}
 .contact-detail {
 	display: flex;
 	justify-content: space-between;
