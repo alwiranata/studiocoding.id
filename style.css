@@ -29,8 +29,7 @@ h1 {
 	display: inline;
 }
 
-nav,
-a {
+nav, a {
 	text-decoration: none;
 	color: black;
 }
@@ -39,6 +38,10 @@ nav > a {
 	margin: 5px;
 	color: orange;
 	font-size: 16px;
+}
+
+nav > a:hover{
+	color: gray;
 }
 
 #landing {
@@ -86,6 +89,7 @@ nav {
 	align-items: center;
 	column-gap: 16px;
 }
+
 #about > div {
 	width: 50%;
 }
@@ -163,6 +167,9 @@ form button{
 	border: none;
 }
 
+ form > .btn:hover{
+	cursor:pointer;
+ }
 .form-group{
 	display: grid;
 	grid-template-columns: repeat(2 ,1fr);
@@ -210,6 +217,10 @@ form button{
 	font-size: 15px;
 }
 
+.input-group input:hover{
+	border-bottom: 2px solid orange;
+}
+
 footer {
 	padding: 16px 128px;
 	background-color: orange;
@@ -229,3 +240,4 @@ footer .icon{
 	display: flex;
 	gap: 32px;
 }
+
