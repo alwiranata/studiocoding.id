@@ -33,7 +33,7 @@ h1 {
 nav, a {
 	text-decoration: none;
 	color: black;
-}
+}hover
 
 nav > a {
 	margin: 5px;
@@ -122,7 +122,7 @@ nav {
 }
 
 .service-header  p {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .service-header h1 {
@@ -137,7 +137,7 @@ nav {
 	position: absolute;
 	background :url("./images/accent1.svg");
 	left: -20px;
-	top: -10px;
+	top: -20px;
 	z-index: -1;
 }
 
@@ -168,7 +168,7 @@ nav {
 }
 
 #contact p {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 #contact h1 {
@@ -181,7 +181,7 @@ nav {
 	height: 60px;
 	position: absolute;
 	background: url('./images/accent2.svg');
-	top: --20px;
+	top: -20px;
 	left: -20px;
 	z-index: -1;
 }
@@ -279,5 +279,9 @@ footer p{
 footer .icon{
 	display: flex;
 	gap: 32px;
+}
+
+footer .icon img:hover{
+	cursor: pointer;
 }
 
