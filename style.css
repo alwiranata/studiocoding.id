@@ -1,7 +1,8 @@
 header {
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-html , body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 }
@@ -30,10 +31,11 @@ h1 {
 	display: inline;
 }
 
-nav, a {
+nav,
+a {
 	text-decoration: none;
 	color: black;
-}hover
+}
 
 nav > a {
 	margin: 5px;
@@ -41,7 +43,7 @@ nav > a {
 	font-size: 16px;
 }
 
-nav > a:hover{
+nav > a:hover {
 	color: gray;
 }
 
@@ -121,7 +123,7 @@ nav {
 	align-items: center;
 }
 
-.service-header  p {
+.service-header p {
 	margin-top: 10px;
 }
 
@@ -129,19 +131,16 @@ nav {
 	position: relative;
 }
 
-
-.service-header h1::before{
-	content:  "";
+.service-header h1::before {
+	content: "";
 	width: 60px;
 	height: 60px;
 	position: absolute;
-	background :url("./images/accent1.svg");
+	background: url("./images/accent1.svg");
 	left: -20px;
 	top: -20px;
 	z-index: -1;
 }
-
-
 
 .service-detail {
 	display: grid;
@@ -150,9 +149,20 @@ nav {
 	margin-top: 72px;
 }
 
+.service-detail-item:hover {
+	transform: scale(1.15);
+}
+
+.service-detail-item:hover img {
+	filter: grayscale(0);
+}
+
 .service-detail-item img {
 	width: 100%;
+	filter: grayscale(1);
+	border-radius: 10px;
 }
+
 
 .service-detail-item h2 {
 	padding: 0 16px;
@@ -165,6 +175,7 @@ nav {
 
 .service-detail-item {
 	box-shadow: 2px 4px 4px gray;
+	border-radius: 10px;
 }
 
 #contact p {
@@ -180,7 +191,7 @@ nav {
 	width: 60px;
 	height: 60px;
 	position: absolute;
-	background: url('./images/accent2.svg');
+	background: url("./images/accent2.svg");
 	top: -20px;
 	left: -20px;
 	z-index: -1;
@@ -192,7 +203,7 @@ nav {
 	column-gap: 128px;
 }
 
-iframe{
+iframe {
 	width: 100%;
 }
 
@@ -203,21 +214,22 @@ form {
 	padding: 64px 32px;
 }
 
-form button{
+form button {
 	border: none;
 }
 
- form > .btn:hover{
-	cursor:pointer;
- }
-.form-group{
+form > .btn:hover {
+	cursor: pointer;
+}
+.form-group {
 	display: grid;
-	grid-template-columns: repeat(2 ,1fr);
+	grid-template-columns: repeat(2, 1fr);
 	column-gap: 32px;
 	margin-top: 32px;
-	grid-template-areas: "name subject"
-						 "email phone"
-						 "message message";
+	grid-template-areas:
+		"name subject"
+		"email phone"
+		"message message";
 }
 
 #input-name {
@@ -236,28 +248,26 @@ form button{
 	grid-area: message;
 }
 
-
-.input-group{
+.input-group {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 32px;
-	
 }
 
-.input-group label{
+.input-group label {
 	font-weight: 700;
 	font-size: 20px;
 	margin-bottom: 32px;
 }
 
-.input-group input{
+.input-group input {
 	border: none;
 	outline: none;
 	border-bottom: 1px solid black;
 	font-size: 15px;
 }
 
-.input-group input:hover{
+.input-group input:hover {
 	border-bottom: 2px solid orange;
 }
 
@@ -270,18 +280,17 @@ footer {
 	align-items: center;
 }
 
-footer p{
+footer p {
 	color: white;
 	width: 50%;
 	margin-top: 10px;
 }
 
-footer .icon{
+footer .icon {
 	display: flex;
 	gap: 32px;
 }
 
-footer .icon img:hover{
+footer .icon img:hover {
 	cursor: pointer;
 }
-
