@@ -21,15 +21,46 @@ body {
 	width: 50%;
 }
 
-header h1 {
+#header h1 {
 	margin: 0px;
+	animation: bounceIn 1s ;
 }
 
 h1 {
 	font-size: 35px;
 	margin: 0 0 16px 0;
 	display: inline;
+
 }
+
+@keyframes bounceIn{
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	35% {
+		opacity: 0.25;
+		transform: translateY(0);
+	}
+	70% {
+		opacity: 0.5;
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* @keyframes flash {
+	0%{
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+} */
+
 
 nav,
 a {
