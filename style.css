@@ -8,6 +8,7 @@ body {
 }
 
 #header {
+	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -217,7 +218,7 @@ nav {
 	position: relative;
 }
 
-#contact h1::before {
+#contact > h1::before {
 	content: " ";
 	width: 60px;
 	height: 60px;
@@ -303,6 +304,7 @@ form > .btn:hover {
 }
 
 footer {
+
 	padding: 16px 128px;
 	background-color: orange;
 	color: white;
@@ -324,4 +326,48 @@ footer .icon {
 
 footer .icon img:hover {
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 992px){
+	#header,#footer{
+		padding: 16px 32px;
+	}
+
+	#sction{
+		padding: 64px 32px;
+	}
+
+	#landing{
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#landing > div{
+		width: 100%;
+	}
+
+	#about{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#about > div{
+		width: 100%;
+	}
+
+	.service-detail{
+		gap: 16px;
+	}
+
+	.contact-detail{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align:center;
+		row-gap: 64px;
+	}
 }
